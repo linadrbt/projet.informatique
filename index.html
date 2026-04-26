@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--UTF-8 pour pouvoir mettre les accents-->
+<meta charset="UTF-8"/> 
+<link rel="stylesheet" href="assets/css/style.css">
+<title> Analyse des données dans un fichier</title>
+</head>
+<body>
+<!--Contient tous les éléments de la page-->
+<div id="page">
+<h1>Analyse des données dans un fichier</h1>
+<!--Endroit où les boutons sont placés-->
+<div class="parametres">
+<button onclick="afficherAide()">Afficher l'aide</button>
+<p> Sélectionner un fichier au format .txt :
+<input type="file" id="fichier"/> <!--Le fichier txt est chargé grâce à cet input qui permet au javascript de le lire-->
+</p>
+<p>
+<label for="delimiteurs">DÉLIMITEUR(S)</label>
+<input type="text" id="delimiteurs" value=";,\&#x22;~|&#@= -_?!%*$()[]{}._:+«»§\/"/> <!--Directement tiré du cours--> 
+</p>
+
+<p>
+<label for="pole">PÔLE</label>
+<input type="text" id="pole" placeholder="entrez un pole..."/>
+<label for="longueur">LONGUEUR</label>
+<input type="text" id="longueur" value="10"/>
+</p>
+
+<div class="mots">
+<label for="stopwords">MOTS GRAMMATICAUX, STOPWORDS EN ANGLAIS</label><br>
+<input type="text" id="stopwords" value="de, le, la, les, à, et, des, un, une, du, que, en, l, que, qu, d, s, se, ne, n, ce, me, sa"/>
+</div>
+
+<br/>
+<div class="bonjour">
+<button onclick="direBonjour()" class="btn-bonjour">Bonjour</button>
+</div>
+<br/>
+
+<div class="boutons">
+<button onclick="segmentation()">Segmentation</button>
+<button onclick="concordancier()">Concordancier</button>
+<button onclick="nombrePhrases()">Nombre de phrases</button>
+</div>
+<br/>
+</div>
+
+<div id="affichage"> <!--Le javascript va afficher les résultats grace à cette id-->
+</div>
+
+</div>
+<script src="assets/js/main.js"></script> <!--Placé tout à la fin pour que tout le html soit bien complet-->
+
+</body>
+</html>
