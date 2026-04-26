@@ -1,0 +1,82 @@
+body {
+background-color: #fce4ec; /* J'ai décidé de personnaliser avec mes couleurs : ici, du rose pastel */
+margin: 0;
+padding: 20px;
+}
+
+#page { /* Constitue le bloc bleu qui centre la page */
+background-color: #e3f2fd;
+width: 85%;
+margin: auto; /* Centré grâce à ça */
+border: 3px solid #2c3e50;
+text-align: center;
+}
+
+.parametres {
+background-color: #f3e5f5;
+border: 1px solid #7f8c8d;
+padding: 20px;
+width: 80%; /* Nécessité de rendre cette partie plus petite que la précédente */
+margin: auto;
+}
+
+h1 { /* Le titre principal */
+color: #34495e;
+font-size: 2.5rem;
+text-align: center;
+font-size: 2.5rem;
+}
+
+.etiquette {
+background-color: #d2b4de;
+padding: 2px 5px;
+border: 1px solid gray;
+font-size: 12px;
+}
+
+button { /* Le style pour tous mes boutons */
+background-color: #ffffff;
+border:2px solid #34495e;
+padding: 10px 20px;
+margin: 5px;
+/* cursor: pointer; Test pour voir si ça s'affiche */
+}
+
+.btn-bonjour {
+border: 3px solid #117a65;
+padding: 5px 20px;
+}
+
+#affichage {
+width: 60%;
+margin: 20px auto;
+text-align: center;
+}
+
+table { /* Les styles des tableaux */
+margin: 20px auto;
+border: 2px solid black;
+background-color: white;
+}
+
+th, td {
+border: 1px solid black;
+padding: 8px;
+}
+
+.table-globale { /* Pour pouvoir mettre le texte à gauche et les résultats à droite */
+width: 100%;
+border: 0px white; /* Tableau qu'on ne voit pas pour bien placer les textes */
+background-color: transparent;
+}
+
+.colonne-gauche {
+width: 50%;
+text-align: left;
+font-size: 12px;
+}
+
+.colonne-droite {
+width: 50%;
+text-align: center;
+}
